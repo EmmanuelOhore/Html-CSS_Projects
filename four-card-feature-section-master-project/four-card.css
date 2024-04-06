@@ -1,0 +1,121 @@
+@font-face {
+    font-family:"Poppins" ;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
+
+:root {
+    --dark-blue: hsl(234, 12%, 34%);
+    --gray-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+  }
+  body{
+    background-color: var(--light-gray);
+    padding: 2rem 0;
+    font-size: 15px;
+    font-family: "Poppins" , sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1{
+    color: var(--gray-blue);
+    font-weight: 200;
+  }
+  header h2{
+    margin-top: -1rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+  }
+  header{
+    text-align: center;
+  }
+
+  header p{
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: "poppins",sans-serif;
+    color: var(--gray-blue);
+  }
+
+  main{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 1.5rem;
+   padding: 2rem;
+   margin-top: 2rem;
+  }
+
+  .wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+  }
+
+  .card{
+    border-radius:0.45rem ;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 1rem;
+    text-align: right;
+   
+  }
+  .card-text{
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+
+  .card h2{
+    font-size: 1em;
+  }
+  .card p{
+    font-size: 0.8rem;
+    color: var(--gray-blue);
+  }
+   
+
+ 
+  .builder{
+    border-top: 4px solid  hsl(0, 78%, 62%);
+  }
+  .karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+  }
+
+  .supervisor{
+    align-self: center;
+    border-top: 4px solid hsl(180, 62%, 55%);
+      }
+  .calculator{
+    align-self: center;
+    border-top: 4px solid hsl(212, 86%, 64%);
+  }
+
+  @media (max-width:750px) {
+    main{
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+      margin-top: 3.5rem;
+    }
+    h1{
+      font-size: 1.5rem;
+    }
+    header h2{
+      font-size: 1.36rem;
+      padding-top: 3px;
+    }
+    .card-text{
+      padding-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width:320px) {
+    h1{
+      font-size:1.3rem ;
+    }
+    header h2{
+      font-size: 1.26rem;
+    }
+    header p{
+      font-size: 0.8rem;
+    }
+  }

@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+    font-weight: normal;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+body{
+    background-color:hsl(30, 54%, 90%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Young Serif', serif;
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    border-radius: 1.5rem;
+    margin: 2em 0;
+}
+h1,h2,h3{
+    font-family: 'Outfit', sans-serif;
+}
+strong{
+    font-family:'Outfit', sans-serif;
+    color:hsl(30, 10%, 34%) ;
+}
+
+
+img{
+ width:85%;
+border-radius: 1.5rem;
+margin-top: 2em ;
+}
+
+section{
+    width: 85%;
+    margin: 1rem;
+}
+section > h1:first-of-type {
+  font-size: 2rem;
+}
+section > p:first-of-type{
+    margin: 1rem 0;
+  }
+
+  .prep{
+    padding: 2rem;
+    background-color:hwb(330 96% 0%);
+    
+}
+.prep h2{
+    color: hsl(332, 51%, 32%) ;
+    font-size: 1.2rem;
+}
+.prep ul li{
+    margin-top: 1em; 
+}
+
+.ingredients{
+    margin: 2em;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+    
+}
+.ingredients h1{
+   color:hsl(14, 45%, 36%);
+}
+.ingredients ul li{
+    margin-top: 1em; 
+}
+
+.Instructions{
+    margin: 2em;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+}
+.Instructions h1{
+    color:hsl(14, 45%, 36%);
+ }
+ .Instructions ol li{
+     margin-top: 1rem; 
+ }
+
+ .nutrition{
+    margin: 2em;
+ }
+ .nutrition h1{
+    color:hsl(14, 45%, 36%);
+ }
+ .nutrition p{
+    margin: 1rem 0;
+ }
+ .nutrition table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+ .nutrition td {
+    border-bottom: 1px solid black; /* Set bottom border to 1px solid black */
+    padding: 8px; 
+    color: hsl(14, 45%, 36%); /* Set text color to hsl(14, 45%, 36%) */
+}
+ 
+@media (max-width:900px) {
+    img{
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    section > h1:first-of-type{
+        font-size: 1.2rem;
+    }
+
+    p,li,table{
+        font-size: 0.79rem;
+    }
+    h1,h2,h3{
+        font-size:1rem ;
+    }
+    .prep h2{
+        font-size: 0.9rem;
+    }
+
+}
+@media(max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Young Serif', serif;
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        margin:  0;
+    }
+
+    section > h1:first-of-type{
+        font-size: 0.8rem;
+    }
+
+    p,li,table{
+        font-size: 0.5rem;
+    }
+    h1,h2,h3{
+        font-size:0.8rem ;
+    }
+    .prep h2{
+        font-size: 0.6rem;
+    }
+    .prep{
+        padding: 1rem;
+    }
+
+    .ingredients{
+        margin: 1em;
+        padding-bottom: 1rem;
+    }
+
+    .Instructions{
+        margin: 1em;
+        padding-bottom: 1rem;
+    }
+    .nutrition{
+        margin: 1em;
+     }
+     .nutrition p{
+        margin: 0.5rem 0;
+     }
+
+}
