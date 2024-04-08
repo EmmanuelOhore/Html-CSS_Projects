@@ -1,0 +1,301 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* General code */
+:root {
+    --Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+  }
+
+body{
+    font-family:"Bai Jamjuree",sans-serif ;
+    font-size: 18px; 
+}
+h3{
+    font-size: 1.4rem;
+    font-weight:600 ;
+}
+
+h5{
+    font-weight:600 ;
+}
+p{
+    color: var(--Grayish-Blue);
+    font-size:0.8rem ;
+}
+.btn{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    margin: 2rem 0 1rem 0.5rem; 
+}
+ .btn a{
+    color: white;
+}
+.ios{
+    background-color:var(--Cyan);
+    box-shadow: 0px 4px 6px hsla(171, 66%, 44%, 0.5);
+}
+.mac{
+    background-color: var(--Light-Blue);
+    box-shadow: 0px 4px 6px hsl(233, 100%, 69%);
+}
+
+
+/* Header Section */
+header{
+    text-align: center;
+    padding-top: 4rem;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header h1{
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+header p{
+    padding-top: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Computer Section */
+.computer-section{
+    text-align: center;
+
+}
+.computer-section h3{
+    margin-top:8rem;
+}
+.computer-section p{
+    padding-top: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.computer-section-div-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+    flex-direction:row;
+    column-gap: 3rem;
+}
+.computer-section-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+}
+.computer-section-div-container img{
+    max-width: 752px;
+    margin: 0 auto;
+}
+.computer-section-text{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+.computer-section-text h5{
+    margin-bottom: -0.5rem;
+}
+
+/* Clipborad Section */
+.clipboard{
+    text-align: center;
+    margin-top: 6rem;
+}
+.clipboard p{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.clipboard img{
+    margin-top: 4.5rem; 
+    max-width: 752px;
+}
+
+
+.supercharge{
+    text-align: center;
+}
+
+.supercharge p{
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+}
+
+.workflow-section{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+}
+.workflow p{
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.workflow h5{
+    padding-top: 1.5rem;
+}
+
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+.images img{
+    height: 2rem;
+}
+
+.ios-mac-section{
+    text-align: center;
+    margin-top: 7rem;
+}
+.ios-mac-section p{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size:0.8rem ;
+}
+
+
+.footer{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+    background-color: var();
+    height: 4rem;
+}
+.footer-img-container{
+    display: flex;
+}
+.footer img{
+    height: 2rem;
+    align-self: center;
+}
+
+.footer ul{
+    display: flex;
+    gap: 25px;
+}
+.footer li{
+    align-self: center;
+    font-size: 0.85rem;
+    color: var(--Grayish-Blue);
+}
+.logo{
+    display: flex;
+    gap: 5px;
+}
+.footer .logo img{
+    height: 1rem;
+    align-self: center;
+}
+
+@media (max-width:1024px){
+    .computer-section-div-container{
+        flex-direction:column;
+    }
+    .computer-section-text-container{
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .computer-section-text{
+        text-align: center;
+    }
+
+}
+@media (max-width:500px) {
+
+    header{
+        padding-top:3rem;
+        padding:3rem 0.5rem 0 0.5rem   ;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+   header h1{
+        max-width: 100%;
+        font-size: 1.5rem ;
+    }
+    h3{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .btn{
+        width:90%;
+    }
+    .mac{
+        margin-top: 0.5rem;
+    }
+    .computer-section-div-container img{
+        width: 90%;
+    }
+    .clipboard img{
+        width: 98%;
+        margin-top: 2rem;
+    }
+    .supercharge h3{
+        margin-top: 3rem;
+    }
+    .supercharge p{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    .images{
+        flex-direction: column;
+        max-width: 120px;
+        gap: 65px;
+    }
+    .images img{
+        height: 2rem;
+        width: 100%;
+    }
+    .workflow-section{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .workflow p{
+        padding-top: 0rem;
+        max-width: 90%;
+    }
+
+    
+.footer{
+    flex-direction: column;
+    height: 20rem;
+    align-items: center;
+}
+
+.footer img{
+    height: 3rem;
+}
+
+.footer ul{
+    flex-direction: column;
+}
+.footer li{
+    font-size: 0.8rem;
+}
+.logo{
+    gap: 2rem;
+}
+    
+}
