@@ -90,7 +90,8 @@ header p{
     flex-wrap: wrap;
     margin-top: 3.5rem;
     flex-direction:row;
-    column-gap: 3rem;
+    column-gap: 6rem;
+    
 }
 .computer-section-text-container{
     display: flex;
@@ -100,7 +101,7 @@ header p{
 }
 .computer-section-div-container img{
     max-width: 752px;
-    margin: 0 auto;
+
 }
 .computer-section-text{
     text-align: left;
