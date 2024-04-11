@@ -1,0 +1,177 @@
+@import url(https://fonts.google.com/specimen/Libre+Franklin);
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+--Pale-Blue :hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+--Blue: hsl(223, 87%, 63%);
+}
+
+body{
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+}
+main{
+    max-width: 1440px;
+}
+
+
+/* header- section */
+header{
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+}
+header img{
+    padding-bottom: 2.5rem;
+}
+header span{
+    font-weight:300 ;
+    color: var(--Gray);
+}
+header p{
+    padding-top: 0.5rem;
+    font-weight: 200;
+}
+
+
+/* emal-section */
+.email-section{
+    text-align: center;
+}
+.form{
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+input{
+   font-size: 1rem;
+   color: black;
+   opacity: 0.5;
+   padding-left: 2rem;
+
+}
+.form input{
+    width: 50%;
+    height: 50px;
+    border-radius: 2rem;
+    border: 1px solid var(--Pale-Blue);
+    margin-right: 1rem;
+}
+.form .input-clicked{
+    border: 1px solid var(--Light-Red);
+}
+.input-clicked-text{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-align: start;
+    margin-left: 3.5rem;
+    color: var(--Light-Red);
+}
+.hide{
+    display: none;
+}
+.form button{
+    width: 30%;
+    height: 50px;
+    border-radius: 2rem;
+    background-color: var(--Blue);
+    box-shadow: 0px 2px 3px var(--Blue);
+    border: none;
+}
+.form button:hover{
+    background-color: var(--Pale-Blue);
+    box-shadow: 0px 2px 3px var(--Pale-Blue);
+}
+.form a{
+    color: snow;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+/* dashbard section */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.dashboard img{
+    max-width: 600px;
+}
+.icon{
+    margin: 3rem 0;
+   display: flex;
+   column-gap: 1.5rem;
+}
+.icon i{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid var(--Gray);
+    box-shadow: 0px 2px 3px var(--Gray);
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    color: var(--Blue);
+    padding: 4px;
+}
+.fab{
+    font-size: 20px;
+}
+
+.dashboard p{
+    color: var(--Gray);
+    font-size: 1rem;
+    margin-bottom: 3rem ;
+}
+
+@media (max-width: 430px){
+    header h1{
+        font-size: 1.6rem;
+    }
+    header p{
+        font-size: 1rem;
+    }
+    header img{
+        height: 1.5rem;
+    }
+    .dashboard img{
+        max-width: 90%;
+    }
+    .email-section .form{
+        display: flex;
+        flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .form input{
+        width: 80%;
+    }
+    .form button{
+        width: 90%;
+    }
+    .form a{
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+    .fab{
+        font-size: 12px;
+    }
+    .icon i{
+        width: 17px;
+        height: 17px; 
+    }
+    .dashboard p{
+        font-size:0.8rem ;
+    }
+}
+
