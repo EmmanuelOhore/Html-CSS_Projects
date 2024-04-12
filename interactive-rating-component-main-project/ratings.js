@@ -13,8 +13,11 @@ let selectedValue= null
 rating.forEach(numbers=> {
     numbers.addEventListener("click",(e)=>{
         selectedValue= numbers.innerText
-        numbers.classList.toggle("clicked")
-        console.log(selectedValue)
+        rating.forEach(item => {
+            item.classList.remove("clicked");
+        });
+        numbers.classList.add("clicked")
+      
     })
 });
 
