@@ -134,6 +134,11 @@ max-width: 200px;
     color: var(--White);
     margin-top: 1rem;
 }
+.thank-you button:hover{
+    background-color: white;
+    color: var(--Orange);
+}
+
 
 /* javascript- effect */
 .main-page .num-list .clicked{
