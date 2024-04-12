@@ -22,16 +22,21 @@ rating.forEach(numbers=> {
 });
 
 btn.addEventListener("click", ()=>{
-    console.log(selectedValue)
+    if(selectedValue==null){
+        alert("please select a rating")
+        return
+       }
    text.innerText= `You selected ${selectedValue} out of 5`
    main.classList.toggle("display") 
    if(thank.classList.contains("display")) {
     thank.classList.remove("display")
    }  
+ 
 })
 
 back.addEventListener("click", ()=>{
    thank.classList.toggle("display") 
+  
 })
 });
 
