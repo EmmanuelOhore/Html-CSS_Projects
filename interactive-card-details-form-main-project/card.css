@@ -1,0 +1,347 @@
+@import url(https://fonts.google.com/specimen/Space+Grotesk);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk",sans-serif;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+  --gradient:linear-gradient( to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%) );
+  --Red:hsl(0, 100%, 66%);
+}
+
+body{
+    max-width: 1440px;
+}
+
+
+/* main styling */
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.side{
+    width: 35%;
+    height: 100vh;
+    background: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover0
+}
+
+/* card info styling */
+.card-info{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-info form{
+    width: 45%;
+}
+.card-info form .input-box label{
+display: block;
+color: var(--Very-dark-violet);
+font-weight: 600;
+font-size: 13px;
+margin-top: 1.5rem;
+text-transform: uppercase;
+}
+.card-info form .input-box input{
+    width: 100%;
+    padding: .5rem;
+    height: 45px;
+    margin-top: .3rem;
+    border: 1px solid var(--Dark-grayish-violet);
+    border-radius: .3rem;
+}
+.card-info form .input-box input::placeholder{
+    padding-left: 1rem;
+}
+.card-info form .unique{
+    width: calc(100% / 2 - 20px);
+}
+.card-info form .unique label{
+    display: block;
+}
+.card-info form .unique input{
+    width: 35%;
+}
+.card-info form .unique input::placeholder{
+    padding-left: 0;
+    text-align: center;
+}
+.card-info form .unique-container{
+    display: flex; 
+}
+.card-info form .cvc input{
+    width: 60%;
+}
+.card-info form  button{
+    width: 100%;
+    margin: 1.5rem 0;
+    height: 45px;
+    color: var(--White);
+    font-weight: 500;
+    border-radius: .3rem;
+    background-color: var(--Very-dark-violet);
+    border: none;
+}
+
+/* front card styling */
+.Card{
+    position: relative;
+}
+.card-front{
+    position: absolute;
+    width: 30%;
+    height: 33vh;
+    border-radius: 1rem;
+    top: 17%;
+    left: 8%;
+    background:url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-front::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 30px;
+    border-radius: 50%;
+    background-color: var(--White);
+    top: 0;
+    margin-top: 1.5rem;
+}
+.card-front::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    top: 0;
+    margin-top: 2.5rem;
+}
+.card-front .card-number-container{
+    margin-top: 7rem;
+    text-align: center;
+}
+#card-number {
+    font-size: 2rem;
+    letter-spacing: 0.1rem; 
+    display: block;
+    width: 100%; 
+    color: var(--White);
+    font-weight: 100;
+}
+
+
+.card-front .card-name{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    padding: 0 2rem;
+}
+.card-front .card-name h2{
+    font-weight: 300;
+    font-size: .8rem;
+    color: var(--White);
+}
+
+/* back card styling */
+.card-back{
+    position: absolute;
+    width: 30%;
+    height: 35vh;
+    border-radius: 1rem;
+    top: 55%;
+    left: 16%;
+    background:url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-back h2{
+    position: absolute;
+    right: 13%;
+    top: 44%;
+    color: var(--White);
+    font-weight: 300;
+}
+
+/* table styling */
+@media (max-width:900px) {
+    .side{
+        background-size: cover;
+    }
+    .card-info form .input-box label{
+        font-size: .7rem;
+    }
+
+    .card-info form .unique-container{
+        justify-content: space-between;
+    }
+    .card-info form .unique{
+        width: 120%;
+    }
+    .card-info form .unique >label{
+        font-size: .7rem;   
+    }
+    .card-info form .cvc{
+        text-align: center;
+        justify-content: center;
+    }
+    .card-info form .unique input{
+        width: 45%;
+    }
+    .card-info form .cvc input{
+        width: 70%;
+    }
+    .card-info form .input-box input::placeholder{
+        font-size: .7rem;
+    }
+    .card-info form  button{
+        font-size: .7rem;
+    }
+    /* card styling  */
+    .Card{
+        width: 300px;
+        height: 20%; 
+    }
+
+    /* front card styling */
+    .card-front{
+        left: 3%;
+    }
+
+    .card-front::after{
+        width: 30px;
+        height: 30px;
+    }
+    .card-front .card-number-container{
+        margin-top: 5.5rem;
+    }
+    #card-number {
+        font-size: 1.5rem;
+    }
+
+    .card-front::before{
+        width: 10px;
+        height: 10px;
+        margin-top: 2rem;
+        left: 70px;
+    }
+    .card-front .card-name h2{
+        font-size: .7rem;
+    }
+
+    /* back card styling */
+    .card-back{
+        left: 5rem;
+        top: 40%;
+        outline: 1px solid black;
+        background-position: center;
+    }
+    .card-back h2{
+        right: 1rem;
+        top: 42.5%;
+        font-size: 1.3rem;
+    }
+
+}
+
+/* mobile styling large */
+@media (max-width:500px) {
+    main{
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+    .side{
+        width: 100%;
+        background: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+    }
+    .card-info form{
+        width: 80%;
+    }
+    .card-info form .input-box label{
+        margin-top: 1rem;
+    }
+    /* card styling */
+    .Card{
+        width: 65%;
+        height: 22%; 
+        margin-top: 10px;
+        border-radius: .2rem;
+    }
+    .card-front{
+        top: 5rem;
+        z-index: 2;
+    }
+    .card-back{
+        top:5px;
+        margin-left: 2rem;
+    }
+    .card-back h2{
+        right: 10%;
+        top: 43%;
+        font-size: 1rem;
+    }
+    .card-front::after{
+        margin-top: .7rem;
+        width: 30px;
+        height: 30px;
+    }
+    .card-front .card-number-container{
+        margin-top: 4.3rem;
+    }
+    #card-number {
+        font-size: 1.2rem;
+    }
+
+    .card-front::before{
+        width: 10px;
+        height: 10px;
+        margin-top: 1.35rem;
+        left: 70px;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .Card{
+        width: 70%;
+        height: 21%; 
+        border-radius: .2rem;
+    }
+
+    .card-back{
+        left: 3rem;
+    }
+    .card-back h2{
+        right: 10%;
+        top: 43%;
+        font-size: 1rem;
+    }
+    .card-info form{
+        width: 80%;
+    }
+    .card-front .card-name{
+        margin-top: 1.5rem;
+    }
+}

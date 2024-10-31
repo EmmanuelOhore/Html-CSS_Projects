@@ -1,0 +1,122 @@
+@import url(https://fonts.google.com/specimen/Inter);
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Green: hsl(75, 94%, 57%);
+--Off-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: "inter",sans-serif ;
+    max-width: 1440px;
+    background-color:var(--Off-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 25%;
+    border-radius: 10px;
+    height: max-content;
+    background-color: var(--Dark-Grey);
+}
+
+.content{
+    text-align: center;
+    padding-top: 2rem;
+
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 2rem;
+}
+.content h1{
+    font-size: 1.5rem;
+    color: var(--White);
+    font-weight: 400;
+}
+.content h2{
+    font-size: 0.8rem;
+    color: var(--Green);
+    margin-top: .3rem;
+    font-weight: 600;
+}
+.content p{
+    font-size: 14px;
+    color: grey;
+    margin-top:1rem ;
+}
+.content img{
+    border-radius:50% ;
+    width: 6rem;
+}
+
+button{
+    width: 100%;
+    height: 3em;
+    border-radius: 5px;
+    background-color: var(--Grey);
+    color: var(--White);
+    border: none;
+    font-weight: 700;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button:hover{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    cursor: pointer;
+}
+
+@media (max-width:850px){
+    main{
+        width: 45%;
+    }
+    button{
+        height: 2.7em;
+        font-size: .8rem;
+    }
+    .content h1{
+        font-size: 1.3rem;
+    }
+    .content h2{
+        font-size: 0.7rem;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .content img{
+        width: 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    main{
+        width: 75%;
+    }
+    button{
+        height: 2.3em;
+    }
+    .content h1{
+        font-size: 1rem;
+    }
+    .content h2{
+        font-size: 0.6rem;
+    }
+    .content p{
+        font-size: 10px;
+    }
+}
